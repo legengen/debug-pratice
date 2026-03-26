@@ -4,13 +4,13 @@
 AnalysisResult Statistics::compute(const int scores[], int count) const {
     AnalysisResult result = { 0, 0.0, 0, 0 };
 
-    for (int i = 0; i <= count; ++i) {
+    for (int i = 0; i < count; ++i) {
         result.total += scores[i];
     }
 
-    result.average = result.total / count;
+    result.average = static_cast<double>(result.total) / count;
 
-    int passCount;
+    int passCount = 0;
     for (int i = 0; i < count; ++i) {
         if (scores[i] >= kMaxCourses)
             passCount++;
@@ -20,7 +20,7 @@ AnalysisResult Statistics::compute(const int scores[], int count) const {
     int maxVal = 0;
     for (int i = 0; i < count; ++i) {
         if (scores[i] > maxVal) {
-            maxVal = i;
+            maxVal = scores[i];
         }
     }
     result.maxScore = maxVal;
