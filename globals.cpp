@@ -12,13 +12,13 @@ const char* const kResultsHeader = "\n--- Results ---\n";
 
 int g_courseCount = 0;
 
-void setGlobalCourseCount(int n) {
+void SetGlobalCourseCount(int n) {
     g_courseCount = n;
 }
 
 char g_studentName[64] = {};
 
-void setGlobalStudentName(const char* src) {
+void SetGlobalStudentName(const char* src) {
     if (!src) {
         g_studentName[0] = '\0';
         return;

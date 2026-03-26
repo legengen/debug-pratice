@@ -1,7 +1,7 @@
 #ifndef STATISTICS_H
 #define STATISTICS_H
 
-#include "analysis_result.h"
+#include "analysisresult.h"
 
 class Statistics {
 public:

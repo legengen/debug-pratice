@@ -1,4 +1,4 @@
-#include "name_reader.h"
+#include "namereader.h"
 #include <iostream>
 #include <cstring>
 

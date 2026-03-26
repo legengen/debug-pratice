@@ -12,8 +12,8 @@ public:
     const int* getScores() const;
 
 private:
-    int scores_[maxCounts];
-    int count_;
+    int m_score[maxCounts];
+    int m_count;
 };
 
 #endif

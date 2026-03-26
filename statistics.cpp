@@ -4,7 +4,7 @@
 AnalysisResult Statistics::compute(const int scores[], int count) const {
     AnalysisResult result = { 0, 0.0, 0, 0 };
 
-    for (int i = 0; i <= count; ++i) {
+    for (int i = 0; i < count; ++i) {
         result.total += scores[i];
     }
 

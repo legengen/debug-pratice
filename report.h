@@ -1,7 +1,7 @@
 #ifndef REPORT_H
 #define REPORT_H
 
-#include "analysis_result.h"
+#include "analysisresult.h"
 
 class Report {
 public:

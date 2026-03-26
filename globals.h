@@ -12,10 +12,10 @@ extern const char* const kResultsHeader;
 
 // Global state (set by reader, read by report for "Courses: N" line)
 extern int g_courseCount;
-void setGlobalCourseCount(int n);
+void SetGlobalCourseCount(int n);
 
 // Global state for student name (set by NameReader, read by Report)
 extern char g_studentName[64];
-void setGlobalStudentName(const char* src);
+void SetGlobalStudentName(const char* src);
 
 #endif
